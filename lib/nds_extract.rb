@@ -10,7 +10,7 @@ def directors_totals(nds)
   # Find a way to accumulate the :worldwide_grosses per director and return that integer as the value for the director :name key in the
   # new hash using director_database as input
   directors_totals = {
-    # :name => total worldwide_gross
+    # :name => total :worldwide_gross
   }
   directors_index = 0 # Counter for the indeces of the hashes containing directors information
   while directors_index < nds.length do # While loop: while the index for the directors is less than the number of items in the nds do...
@@ -23,12 +23,12 @@ def directors_totals(nds)
                                                                 # movies in the nds (accessed by nds[directors_index][:movies]) do...
     # Get to worldwide_gross
     directors_totals[director_name] += nds[directors_index][:movies][movies_index][:worldwide_gross] # Reassign director_name key in
-                                    # directors_totals to the :worldwide_gross of all the movies for all the directors in the nds
-    movies_index += 1
+                                    # directors_totals to the :worldwide_gross of the movie located at movies_index of :movies at
+                                    # the director at director_name's location in the nds
+    movies_index += 1 # Increment the movies_index counter
     end
-
-    directors_index += 1
+    directors_index += 1 # Increment the directors_index counter
   end
 # binding.pry
-return directors_totals
+return directors_totals # Return all of the 
 end
