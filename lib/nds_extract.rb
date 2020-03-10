@@ -12,9 +12,9 @@ def directors_totals(nds)
   directors_totals = {
     # :name => total worldwide_gross
   }
-  directors_index = 0
-  while directors_index < nds.length do
-    director_name = nds[directors_index][:name]
+  directors_index = 0 # Counter for the indeces of the hashes containing directors information
+  while directors_index < nds.length do # While loop: while the index for the directors is less than the length of the nds do...
+    director_name = nds[directors_index][:name] # 
     directors_totals[director_name] = 0
     # how long to loop
     movies_index = 0
