@@ -30,5 +30,5 @@ def directors_totals(nds)
     directors_index += 1 # Increment the directors_index counter
   end
 # binding.pry
-return directors_totals # Return all of the 
+return directors_totals # Return all of the
 end
