@@ -16,7 +16,7 @@ def directors_totals(nds)
   while directors_index < nds.length do # While loop: while the index for the directors is less than the number of items in the nds do...
     director_name = nds[directors_index][:name] # director_name = the value at the :name key of the director in the hash of the director
                                                 # at the index of the nds director_index is currently at
-    directors_totals[director_name] = 0 # Assign director_name as a key in directors_index and assign it to 0
+    directors_totals[director_name] = 0 # Assign director_name as a key in directors_index and assign it to 0 for now
     # How long to loop
     movies_index = 0 # Counter for the index of the movies
     while movies_index < nds[directors_index][:movies].length do # While loop: while the index of the movies is less than the number of
