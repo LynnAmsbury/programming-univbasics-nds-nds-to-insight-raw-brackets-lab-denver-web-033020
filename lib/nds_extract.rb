@@ -21,7 +21,7 @@ def directors_totals(nds)
     movies_index = 0 # Counter for the index of the movies
     while movies_index < nds[directors_index][:movies].length do # While loop: while the index of the movies is less than the number of
                                                                 # movies in the nds (accessed by nds[directors_index][:movies]) do...
-    # get to worldwide_gross
+    # Get to worldwide_gross
     directors_totals[director_name] += nds[directors_index][:movies][movies_index][:worldwide_gross]
     movies_index += 1
     end
